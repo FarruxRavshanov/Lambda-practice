@@ -15,9 +15,11 @@ def max_odd(l: list) -> int:
     '''
     odd = []
     for i in l:
-        if i % 2 == 1:
+        if int(i) % 2 == 1:
             odd.append(i)
     lambda l: max(odd)
+
+print(max_odd(users))
 
 def min_odd(l: list) -> int:
     '''returns the minimum odd number in the list 'l' given as an argument. (you may use min, labmda)
@@ -30,7 +32,7 @@ def min_odd(l: list) -> int:
     '''
     odd = []
     for i in l:
-        if i % 2 == 1:
+        if int(i) % 2 == 1:
             odd.append(i)
     lambda l: min(odd)
 
@@ -45,7 +47,7 @@ def max_even(l: list) -> int:
     '''
     even = []
     for s in l:
-        if s % 2 == 0:
+        if int(s) % 2 == 0:
             even.append(s)
     
     lambda l: max(even)
@@ -60,7 +62,7 @@ def min_even(l: list) -> int:
     '''
     even = []
     for s in l:
-        if s % 2 == 0:
+        if int(s) % 2 == 0:
             even.append(s)
     
     lambda l: min(even)
